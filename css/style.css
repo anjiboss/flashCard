@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#selecter {
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flash-card {
+  width: 60vh;
+  height: 60vh;
+  box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.686),
+    0 6px 20px 0 rgba(31, 7, 7, 0.508);
+  transition: 1.5s;
+}
+.normal-p {
+  font-size: 10rem;
+  padding: 20% 20% 20% 25%;
+}
+.rotated-p {
+  font-size: 5rem;
+  transform: rotateX(180deg);
+  text-align: center;
+  padding: 40% 20%;
+}
