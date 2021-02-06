@@ -7,6 +7,7 @@ function changeLevel(level) {
   kanji = [];
   hanViet = [];
   let flag = true;
+  curNum = 1;
   if (level !== "Choose level") {
     fetch("csv/" + level + ".csv")
       .then((res) => res.text())
