@@ -39,16 +39,18 @@ function changeLevel(level) {
 }
 
 $(".flash-card").click(() => {
-  if (front) {
-    $(".flash-card").css("transform", "rotateX(180deg)");
-  } else {
-    $(".flash-card").css("transform", "rotateX(360deg)");
+  if (kanji[0] !== undefined) {
+    if (front) {
+      $(".flash-card").css("transform", "rotateX(180deg)");
+    } else {
+      $(".flash-card").css("transform", "rotateX(360deg)");
+    }
+    front = !front;
+    card.html("");
+    setTimeout(() => {
+      showTheWord(curNum, front);
+    }, 500);
   }
-  front = !front;
-  card.html("");
-  setTimeout(() => {
-    showTheWord(curNum, front);
-  }, 500);
 });
 
 $("#left").click(() => {
