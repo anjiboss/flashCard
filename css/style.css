@@ -4,17 +4,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  /* font ko chan */
 }
 
 #selecter {
   display: block;
   margin: auto;
   margin-top: 50px;
+  outline: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+  font-size: 18pt;
+  text-align: center;
+  background: #06BEE1;
+  border: 2px solid #2541B2;
+  color: #fff;
 }
+
+option {
+  text-align: center;
+}
+
 #word {
   margin: auto;
   margin-top: 30px;
-  padding: 5px;
+  padding: 3px;
   text-align: center;
   width: 200px;
   height: 30px;
@@ -57,6 +73,26 @@
   margin: 100px 0px;
   display: flex;
   justify-content: space-around;
+}
+.nav > button{
+  width: 6rem;
+  height: 3rem;
+  border: none;
+  background: #06BEE1;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2em;
+  border: 2px solid #03256C;
+  outline: none;
+}
+
+.nav #left{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.nav #right{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 @media screen and (max-width: 1024px) {
