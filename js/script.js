@@ -3,6 +3,7 @@ let kanji = [];
 let hanViet = [];
 let curNum = 1;
 let front = true;
+
 function changeLevel(level) {
   kanji = [];
   hanViet = [];
@@ -72,7 +73,7 @@ $("#right").click(() => {
 
 function showTheWord(curNum, front) {
   if (front) {
-    card.html(`<p class="normal-p">${kanji[curNum]}</p>`);
+    card.html('<p class="normal-p">'+kanji[curNum]+'</p>');
   } else {
     card.html(`<p class="rotated-p">${hanViet[curNum]}</p>`);
   }
