@@ -18,8 +18,8 @@
   border-radius: 10px;
   font-size: 18pt;
   text-align: center;
-  background: #06BEE1;
-  border: 2px solid #2541B2;
+  background: #06bee1;
+  border: 2px solid #2541b2;
   color: #fff;
 }
 
@@ -36,6 +36,7 @@
 .container {
   width: 60vh;
   height: 60vh;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,16 +54,22 @@
   /* 0 6px 20px 0 rgba(31, 7, 7, 0.508); */
   transition: 1.5s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#holder {
+  width: 100%;
 }
 .normal-p {
   font-size: 10rem;
-  padding: 20% 20% 20% 25%;
+  /* padding: 20% 20% 20% 25%; */
+  text-align: center;
 }
 .rotated-p {
   font-size: 5rem;
   transform: rotateX(180deg);
   text-align: center;
-  padding: 40% 20%;
+  /* padding: 40% 20%; */
 }
 
 .nav {
@@ -70,23 +77,23 @@
   display: flex;
   justify-content: space-around;
 }
-.nav > button{
+.nav > button {
   width: 6rem;
   height: 3rem;
   border: none;
-  background: #06BEE1;
+  background: #06bee1;
   color: #fff;
   font-weight: 500;
   font-size: 2em;
-  border: 2px solid #03256C;
+  border: 2px solid #03256c;
   outline: none;
 }
 
-.nav #left{
+.nav #left {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.nav #right{
+.nav #right {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }

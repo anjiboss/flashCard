@@ -18,11 +18,13 @@
     <div id="word"></div>
     <div class="container">
       <div class="flash-card">
-        <p class="normal-p"></p>
+        <div id="holder">
+          <p class="normal-p"></p>
+        </div>
       </div>
       <div class="nav">
-        <button id="left"> < </button>
-        <button id="right"> > </button>
+        <button id="left"><</button>
+        <button id="right">></button>
       </div>
     </div>
   </body>
@@ -30,7 +32,6 @@
     for (let i = 1; i < 10; i++) {
       $("#selecter").append(`<option>${i + "k"}</option>`);
     }
-    
   </script>
   <script src="js/script.js"></script>
 </html>
